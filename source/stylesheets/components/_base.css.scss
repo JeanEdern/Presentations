@@ -7,7 +7,7 @@ body {
 }
 
 .reveal {
-  font-family: 'Text', Helvetica, Arial, sans-serif;
+  font-family: $base-font, Helvetica, Arial, sans-serif;
   color: white;
   font-size: 1.6rem;
   line-height: 1.5rem;
@@ -25,7 +25,8 @@ body {
 
   // Paragraphs
   p {
-    line-height: 2rem;
+    line-height: 3rem;
+    font-size: 2rem;
   }
 
   // Lists

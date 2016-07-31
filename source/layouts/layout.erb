@@ -28,7 +28,11 @@
     <%= yield %>
 
   <script>
-  Reveal.initialize();
+  Reveal.initialize({
+    // dependencies: [
+    //     { src: '../javascripts/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    //   ]
+  });
   </script>
 
 

@@ -1332,6 +1332,6 @@ body {
 .reveal .slides .text-column {
   text-align: justify;
 }
-.reveal .slides .col-lg-6:not(:first-of-type) .text-column {
+/*.reveal .slides .col-lg-6:not(:first-of-type) .text-column {
   margin-left: 32px;
-}
+}*/
