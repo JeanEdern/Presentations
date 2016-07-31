@@ -316,7 +316,7 @@ body {
 
 .reveal .slides {
   position: absolute;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   top: 0;
   right: 0;
@@ -1323,3 +1323,15 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+
+.reveal .slides .container {
+  margin: auto;
+}
+
+.reveal .slides .text-column {
+  text-align: justify;
+}
+.reveal .slides .col-lg-6:not(:first-of-type) .text-column {
+  margin-left: 32px;
+}
