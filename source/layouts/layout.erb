@@ -15,7 +15,7 @@
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/0.96/head.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
@@ -29,9 +29,11 @@
 
   <script>
   Reveal.initialize({
-    // dependencies: [
-    //     { src: '../javascripts/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-    //   ]
+    dependencies: [{
+      src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }]
   });
   </script>
 
