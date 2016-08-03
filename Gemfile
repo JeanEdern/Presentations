@@ -22,4 +22,11 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 
 # Markdown
+# Redcarpet is a Ruby library for Markdown
 gem 'redcarpet'
+
+# The middleman-rouge gem adds syntax highlighting for Middleman using the Rouge library and Redcarpet markdown engine.
+# gem 'middleman-rouge'
+
+# middleman-syntax is an extension for the Middleman static site generator that adds syntax highlighting via Rouge.
+gem "middleman-syntax"

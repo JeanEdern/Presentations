@@ -4,7 +4,7 @@ title: Presentations
 <a class="demo-link" target="_blank" href="http://www.algolia.com">Algolia</a>
 <div class="reveal">
   <div class="slides">
-    <section id='title-on-image'>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12">
@@ -50,10 +50,12 @@ title: Presentations
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-lg-6">
+            <div class="col-xs-12">
+              <h3 class="text-left">Write your title</h3>
+            </div></div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-6">
               <div class="text-area">
-                <h3 class="text-left">Write your title</h3>
-                <%= link_to 'Revenir au premier slide', '#title-on-image' %>
                 <ul>
                   <li>
                     <p>test</p>
@@ -67,12 +69,11 @@ title: Presentations
                 </ul>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-lg-6">
+            <div class="col-xs-12 col-sm-6 col-lg-6">
               <div>
                 <%= image_tag "http://placehold.it/800x496", class: "img-rounded" %>
               </div>
-            </div>
-          </div>
+            </div></div>
         </div>
       </section>
       <section>
@@ -86,3 +87,13 @@ end
       </section>
   </div>
 </div>
+
+  <script>
+  Reveal.initialize({
+    dependencies: [{
+      src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }]
+  });
+  </script>
