@@ -83,3 +83,14 @@ end
       </section>
   </div>
 </div>
+
+ <script>
+  Reveal.initialize({
+    dependencies: [{
+      src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }]
+  });
+  Reveal.configure({ progress: false });
+  </script>
